@@ -3,7 +3,7 @@ import { startServerAndCreateNextHandler } from '@as-integrations/next';
 import resolvers from '../../../graphql/resolvers/index.js';
 import typeDefs from '../../../graphql/types/index.js';
 import { makeExecutableSchema } from '@graphql-tools/schema';
-//import * as db from '../../../database/server.js'
+
 const schema = makeExecutableSchema({ typeDefs, resolvers });
 const server = new ApolloServer({
     schema

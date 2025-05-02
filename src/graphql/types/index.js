@@ -1,4 +1,5 @@
+
 import { UserType } from './user.types.js';
 
 
-export default [UserType];
+export default [UserType];

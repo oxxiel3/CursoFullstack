@@ -1,3 +1,3 @@
 import { userResolver } from "./user.resolver";
 
-export default {userResolver};
+export default [userResolver];

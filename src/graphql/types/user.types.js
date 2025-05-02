@@ -1,16 +1,6 @@
 import { gql } from 'graphql-tag';
 
 const UserType = gql`
-
-extended
-type Bike {
-    id: String!
-    name: String!
-    brand: String!
-    model: String!
-    color: String!
-    price: Int!
-}
     type User {
         id: String!
         name: String!
@@ -19,7 +9,6 @@ type Bike {
         dpi: String
         nit: String 
         phone: String
-        bikes: [Bike]
     }   
 
     type UserPage {
@@ -43,7 +32,7 @@ type Bike {
     }
 
     #type Mutation {
-        #createUser(input: UserInput!): User
+     #   createUser(input: UserInput!): User
         #updateUser(id: String!, input: UserInput!): User
         #deleteUser(id: String!): User
     #}
